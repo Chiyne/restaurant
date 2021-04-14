@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNGRY PEOPLE</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#promo">HOME</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about_us">ABOUT</a></li>
+                <li class="nav__item"><a class="nav__link" href="#our_team">TEAM</a></li>
+                <li class="nav__item"><a class="nav__link" href="#booking">BOOKING</a></li>
+                <li class="nav__item"><a class="nav__link" href="#pre_menu">MENU</a></li>
+                <li class="nav__item"><a class="nav__link" href="#events">EVENTS</a></li>
+                <li class="nav__item"><a class="nav__link" href="#gallery">GALLERY</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+                <span class="hamburger__item"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="promo" id="promo">
+            <div class="container promo__container">
+                <div class="promo__left">
+                    <div class="promo__wrap">
+                        <p class="promo__work-hours">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                    </div>
+                </div>
+
+                <div class="promo__center">
+                    <img class="promo__logo" src="img/mainicon.svg" alt="logo">
+                    <h1 class="title promo__title">RESTAURANT  <br>
+                    <span class="title-banny title-banny_large">HUNGRY PEOPLE</span></h1>
+                    <hr class="line">
+                    <div class="promo__buttons">
+                        <a href="#booking_id" class="btn promo__btn">BOOK TABLE</a>
+                        <a href="#" class="btn promo__btn">EXPLORE</a>
+                    </div>
+                    <a href="#about_us" class="btn btn_round promo__btn_round"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="social promo__social">
+                    <a href="#" class="btn btn_round social__btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn_round social__btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn_round social__btn"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about_us">
+            <div class="container">
+                <div class="content content_left">
+                    <h2 class="title-banny">ABOUT US</h2>
+                    <hr class="line">
+                    <p class="txt txt_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="txt">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+                <div class="img-group img-group_right">
+                    <div class="img-group__pic">
+                        <img class="img-group__image" src="img/img_cnt/about-us.jpg" alt="fireplace">
+                    </div>
+                    <div class="img-group__border img-group__border_right"></div>
+                </div>
+            </div>
+        </section>
+        <section class="our-team" id="our_team">
+            <div class="container">
+                <h3 class="title title_section">OUR TEAM</h3>
+                <div class="img-group img-group_left">
+                    <div class="img-group__border img-group__border_left"></div>
+                    <div class="img-group__pic" >
+                        <img class="img-group__image" src="img/img_cnt/our-team.jpg" alt="Master chef">
+                    </div>
+                </div>
+                <div class="content content_right">
+                    <h2 class="title-banny">MASTER CHEF</h2>
+                    <hr class="line">
+                    <p class="txt txt_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="txt">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="booking" id="booking">
+            <div class="container">
+                <div class="content content_left">
+                    <h2 class="title-banny">BOOK A TABLE</h2>
+                    <hr class="line">
+                    <form class="form-action" action="#" method="POST">
+                        <input class="text-input" type="text" name="Name" placeholder="Name">
+                        <input class="text-input" type="email" name="email" placeholder="Email">
+                        <input class="text-input" type="tel" name="phone" placeholder="Phone">
+                        <select class="text-input" name="people">
+                            <option value="" selected>People</option>
+                            <option value="1">one</option>
+                            <option value="2">two</option>
+                            <option value="3">three</option>
+                        </select>
+                        <input class="text-input" type="date" name="date">
+                        <input class="text-input" type="time" name="time">
+                        <input class="text-input text-input_submit" type="submit" name="submit" value="BOOK NOW">
+                    </form>
+                </div>
+                <div class="img-group img-group_right">
+                    <div class="img-group__pic" >
+                        <img class="img-group__image" src="img/img_cnt/booking.jpg" alt="antique clock">
+                    </div>
+                    <div class="img-group__border img-group__border_right"></div>
+                </div>
+                <div class="section-footer">
+                    <p class="section-footer__content">
+                        <span class="section-footer__item">
+                            Mon - Fri: <b>8PM - 10PM</b>,
+                            Sat - Sun: <b>8PM - 3AM</b>,
+                        </span>
+                        <span class="section-footer__item">
+                            Phone:
+                            <b>
+                                <a class="section-footer__item" href="tel:+40729131637">+40 729 131 637</a> /
+                                <a class="section-footer__item" href="tel:+40726458782">+40 726 458 782</a>
+                            </b>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="specialties" id="specialties">
+            <div class="container">
+                <h3 class="title title_section">SPECIALTIES</h3>
+                <div class="img-group img-group_left">
+                    <div class="img-group__border img-group__border_left"></div>
+                    <div class="img-group__pic" >
+                        <img class="img-group__image" src="img/img_cnt/specialties.jpg" alt="Master chef">
+                    </div>
+                </div>
+                <div class="content content_right">
+                    <h2 class="title-banny">CHOCOLATE PANCAKES</h2>
+                    <hr class="line">
+                    <p class="txt txt_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                    <p class="txt">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <div class="container">
+                <h2 class="title-banny">DELICIOUS MENU</h2>
+                <hr class="line">
+                <p class="txt txt_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                <ul class="menu-switch">
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">PIZZA</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">SOUPE</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">PASTA</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">WINE</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">DRINKS</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">BEER</a></li>
+                    <li class="menu-switch__item"><a class="menu-switch__link" href="#menu">DESERT</a></li>
+                </ul>
+                    <table class="menu__list">
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+                        <tbody class="menu__item">
+                            <tr class="menu__row">
+                                <td class="menu__column menu__column_name">PIZZA QUATRO STAGIONI  . . . .</td>
+                                <td class="menu__column">55,68 USD</td>
+                            </tr>
+                            <tr class="menu__row">
+                                <td class="menu__column">Integer ullamcorper neque eu purus euismod</td>
+                                <td class="menu__column"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+            </div>
+        </section>
+        <section class="events" id="events">
+            <div class="container">
+                <h3 class="title title_light title_section">PRIVATE EVENTS</h3>
+                <div class="img-group img-group_left">
+                    <div class="img-group__border img-group__border_left"></div>
+                    <div class="img-group__pic" >
+                        <img class="img-group__image" src="img/img_cnt/events1.jpg" alt="Master chef">
+                        <div class="events__wrap events__wrap_left">
+                            <p class="events__caption">weddings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-group img-group_right">
+                    <div class="img-group__pic" >
+                        <div class="events__wrap events__wrap_right">
+                            <p class="events__caption">corporate parties</p>
+                        </div>
+                        <img class="img-group__image" src="img/img_cnt/events2.jpg" alt="antique clock">
+                    </div>
+                    <div class="img-group__border img-group__border_right"></div>
+                </div>
+                <div class="section-footer">
+                    <p class="section-footer__content">
+                        <span class="section-footer__item">
+                            For private events please call:
+                        </span>
+                        <b class="section-footer__item">
+                            <a class="section-footer__item" href="tel:+40729131637">+40 729 131 637</a> /
+                            <a class="section-footer__item" href="tel:+40726458782">+40 726 458 782</a>
+                        </b>
+                        <span class="section-footer__item">
+                            or use the contact form.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="gallery" id="gallery">
+            <div class="container gallery__container">
+                <img class="gallery__image" src="img/img_cnt/gallery1.jpg" alt="something">
+                <img class="gallery__image" src="img/img_cnt/gallery2.jpg" alt="something">
+                <img class="gallery__image" src="img/img_cnt/gallery3.jpg" alt="something">
+                <img class="gallery__image" src="img/img_cnt/gallery4.jpg" alt="something">
+            </div>
+        </div>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="title-banny">CONTACT</h2>
+                <hr class="line">
+                <p class="txt txt_bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                <form class="form-action contact_form-action" action="#" method="POST">
+                    <input class="text-input" type="text" name="name" placeholder="Name">
+                    <input class="text-input" type="email" name="email" placeholder="Email">
+                    <input class="text-input" type="tel" name="tel" placeholder="Phone">
+                    <textarea class="text-input text-input_area" name="message" id="message_id" rows="5" placeholder="Message"></textarea>
+
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                            5th London Boulevard, U.K.
+                        </li>
+                        <li class="contact__item">
+                            <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                            <a href="tel:+40729131637">+40 729 131 637</a> / <a href="tel:+40726458782">+40 726 458 782</a>
+                        </li>
+                        <li class="contact__item">
+                            <i class="fa fa-envelope contact__icon" aria-hidden="true"></i>
+                            <a href="#">office@mindblister.com</a>
+                        </li>
+
+                    </ul>
+                    <input class="text-input text-input_submit" type="submit" value="send message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__map">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1cffa8596598d5573061ced9d94ddb75fcfde0629fd78f273e2b0c0f8a64e3f&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+
+        <div class="footer__info">
+            <div class="container">
+                <img class="footer__logo" src="img/mainicon.svg" alt="logo">
+                <p class="title title_light">
+                    RESTAURANT  <br>
+                <span class="title-banny title-banny_small">HUNGRY PEOPLE</span></p>
+                <div class="social footer__social">
+                    <a class="btn btn_round social__btn footer__btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn_round social__btn footer__btn" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn_round social__btn footer__btn" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#promo" class="btn btn_round up-button">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        <span class="visually-hidden">Наверх</span>
+    </a>
+    <script src="JS/menu.js"></script>
+    <script src="JS/scroll.js"></script>
+</body>
+</html>

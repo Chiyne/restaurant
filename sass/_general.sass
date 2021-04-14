@@ -1,0 +1,441 @@
+body
+	font-family: 'Open Sans', sans-serif
+	font-size: $f_sM
+img
+	max-width: 100%
+	height: auto
+a
+	text-decoration: none
+	font-size: inherit
+	color: inherit
+	padding: 5px
+	white-space: nowrap
+.line
+	width: 60px
+	height: 5px
+	background-color: $c_hover
+	border: 0
+	border-radius: 5%/50%
+	margin: 18px auto
+.line-light
+	display: none
+	flex: 1 1 auto
+	height: 1px
+	background-color: $c_border
+	margin: 0 2px
+
+.container
+	@include flexCntr
+	flex-wrap: wrap
+	box-sizing: border-box
+	width: 100%
+	max-width: 1560px
+	padding: 100px 80px
+	margin: 0 auto
+.title
+	text-transform: uppercase
+	font-weight: bold
+	font-size: $f_sS
+	letter-spacing: 0.5em
+	text-align: center
+	width: 100%
+	&_light
+		color: $c_light
+	&-banny
+		font-family: 'Banny', 'Georgia', serif
+		font-weight: normal
+		font-size: 34px
+		&_large
+			font-size: 96px
+			line-height: 96px
+		&_small
+			font-size: 30px
+			line-height: 32px
+.title_section
+	height: $secHedHeight_L
+	line-height: $secHedHeight_L
+.section-footer
+	@include flexCntr
+	min-height: 100px
+	&__content
+		text-align: center
+.section-footer__item
+	white-space: nowrap
+.btn
+	display: inline-block
+	text-align: center
+	padding: 20px
+	border-radius: 5px
+	border: 1px solid $c_border
+	font-size: $f_sS
+	line-height: 20px
+	font-weight: bold
+	color: $c_light
+	&:hover
+		background-color: $c_hover
+		color: $c_dark
+	&_round
+		@include flexCntr
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		padding: 10px
+		font-size: $f_sM
+		background-color: $c_light
+		background-clip: content-box
+		color: $c_dark
+		&:hover
+			color: $c_light
+			border-color: $c_hover
+.up-button
+	display: none
+	position: fixed
+	z-index: 1
+	bottom: 75px
+	right: 20px
+	cursor: pointer
+	border: 1px solid $c_hover
+	background-color: $c_hover
+	&_shown
+		display: flex
+
+
+
+.social
+	@include flexCntr
+	&__btn
+		margin: 10px 0
+.txt
+	text-align: center
+	font-size: $f_sS
+	&_bold
+		font-weight: bold
+		font-size: $f_sM
+		max-width: 565px
+
+/*HEADER*/
+
+ /*nav*/
+.header
+	position: absolute
+	top: 0px
+	left: 0px
+	width: 100%
+	color: $c_light
+
+.nav
+	display: flex
+	justify-content: space-between
+	width: 100%
+	padding: 0 20px
+	&__item:nth-child(4)
+		margin-right: 110px
+	&__item:nth-child(5)
+		margin-left: 110px
+	&__link
+		font-weight: bold
+		line-height: 18px
+	&__list
+		@include flexCntr
+		justify-content: space-around
+		width: 100%
+		min-height: 100px
+		border-bottom: 1px solid $c_border
+.hamburger
+	display: none
+
+	/*MAIN*/
+
+.content
+	flex-basis: 50%
+	text-align: center
+
+	&_left
+		padding-right: 50px
+
+	&_right
+		padding-left: 50px
+.img-group
+	position: relative
+	@include flexCntr
+	box-sizing: border-box
+	flex: 1 1 50%
+	&_right
+		justify-content: flex-end
+	&_left
+		justify-content: flex-start
+	&__pic
+		position: relative
+	&__image
+		border-radius: 5px
+		box-shadow: 0 0 50px -10px $c_dark
+	&__border
+		position: relative
+		z-index: 2
+		width: 250px
+		box-sizing: border-box
+		border: 20px solid $c_hover
+		border-radius: 5px
+		box-shadow: inset 0 0 100px -50px $c_dark, 0 0 100px -50px $c_dark
+		&::before
+			content: ""
+			display: block
+			margin-top: 100%
+		&_right
+			left: -125px
+			margin-right: -125px
+		&_left
+			right: -125px
+			margin-left: -125px
+
+/*Promo section*/
+
+.promo
+	display: flex
+	width: 100%
+	background: #140e0d url(../img/img_bg/header-bg.jpg) center no-repeat
+	background-size: cover
+	color: $c_light
+	&__container
+		min-height: 100vh
+		width: 100%
+		padding-top: 200px
+
+	&__left
+		flex-basis: 15%
+		@include flexCntr
+		justify-content: start
+	&__wrap
+		transform: rotate(180deg)
+	&__work-hours
+		writing-mode: vertical-lr
+		line-height: 12px
+		margin: 0
+		font-weight: 700
+
+	&__center
+		flex-basis: 70%
+		@include flexCntr
+		flex-direction: column
+		border-right: 1px solid $c_border
+		border-left: 1px solid $c_border
+		min-height: 100%
+	&__title
+		height: auto
+		margin-top: auto
+	&__buttons
+		text-align: center
+		margin: 30px auto
+	&__btn
+		width: 200px
+		height: 60px
+		margin: 5px 20px 0px
+		&_round
+			margin-top: auto
+	&__logo
+		width: 150px
+		position: absolute
+		top: 25px
+		left: 50%
+		transform: translateX(-50%)
+	&__social
+		flex-direction: column
+		align-items: flex-end
+		flex-basis: 15%
+	&__more
+		@include flexCntr
+		width: 100%
+
+/*about us*/
+
+.about-us
+	background-color: $c_light
+
+/*our_team*/
+
+.our-team
+	background: url(../img/img_bg/our-team-bg.jpg) no-repeat center center / cover
+	color: $c_light
+	.container
+		padding-top: 0px
+
+/*booking*/
+.form-action
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 20px
+
+.text-input
+	background-color: #e5e5e5
+	border-radius: 5px
+	border: none
+	margin: 5px
+	padding-left: 20px
+	min-width: 200px
+	height: 60px
+
+.text-input_submit
+	background-color: $c_hover
+	padding-left: 8px
+	font-weight: 700
+	text-transform: uppercase
+	color: #ffffff
+
+.booking
+	.container
+		padding-bottom: 0px
+	.text-input
+		flex: 1 1 40%
+	.section-footer
+		color: $c_opacity_05
+
+/*SPECIALTIES*/
+.specialties
+	background: url(../img/img_bg/specialties-bg.jpg) no-repeat center center / cover
+	color: $c_light
+	.container
+		padding-top: 0px
+
+/*menu*/
+.menu
+	.container
+		flex-direction: column
+	&-switch
+		@include flexCntr
+		justify-content: space-around
+		flex-wrap: wrap
+		width: 100%
+		max-width: 900px
+		margin: 20px  0 40px
+		&__item
+			border-bottom: 1px solid $c_opacity_02
+			text-align: center
+			padding: 10px 20px
+			margin: 0 5px
+			&:hover
+				border-bottom: 1px solid $c_hover
+				color: $c_hover
+			&:active
+				border-bottom: 1px solid $c_hover
+
+	&__list
+		width: 100%
+		display: grid
+		grid-template-columns: repeat(auto-fit, 345px)
+		justify-content: space-evenly
+		column-gap: 20px
+		line-height: 18px
+	&__item
+		text-align: center
+		height: 60px
+	&__row:nth-child(odd)
+		font-family: 'Banny', 'Georgia', serif
+	&__row:nth-child(even)
+		font-size: 12px
+		line-height: 12px
+		color: $c_opacity_05
+	&__column
+		vertical-align: top
+
+
+
+/*Events*/
+.events
+	background: url(../img/img_bg/specialties-bg.jpg) no-repeat center center / cover
+	.container
+		padding-top: 0
+		padding-bottom: 0
+	.section-footer
+		color: $c_border
+	&__wrap
+		position: absolute
+		top: 0
+		bottom: 0
+		background-color: #000000
+		width: 80px
+		border-radius: 0px 5px 5px 0px
+		padding-top: 20px
+		&_right
+			left: 0
+			transform: rotate(180deg)
+		&_left
+			right: 0
+	&__caption
+		color: $c_light
+		font-family: 'Banny', 'Georgia', serif
+		text-transform: uppercase
+		writing-mode: vertical-lr
+		font-size: 24px
+		margin: 0
+		margin-right: 50px
+
+/*Gallery*/
+.gallery
+	&__container
+		padding: 0
+		min-height: 0px
+		flex-wrap: nowrap
+		max-width: 100%
+	&__image
+		flex: 1 1 25%
+		min-width: 150px
+
+/*Contact*/
+.contact
+	.container
+		flex-direction: column
+	.text-input
+		flex: 1 1 30%
+		&_submit
+			flex: 1 1 45%
+		&_area
+			min-width: auto
+			height: auto
+			flex: 1 1 100%
+			padding-top: 20px
+	&__list
+		flex: 1 1 45%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+	&__item
+		position: relative
+		margin-left: 10px
+		font-size: 14px
+		font-weight: 700
+		white-space: nowrap
+		color:  $c_opacity_05
+	&__icon
+		color: $c_hover
+
+/*Footer*/
+.footer
+	&__map
+		height: 475px
+	&__info
+		background-color: #000000
+		color: $c_light
+	.container
+		min-height: 250px
+		flex-direction: column
+		justify-content: space-between
+		align-content: center
+		padding-top: 0
+		padding-bottom: 0
+	&__logo
+		max-width: 100px
+		margin: 10px
+	&__social
+		flex-direction: row
+	&__btn
+		margin: 10px
+
+.visually-hidden
+	position: absolute
+	clip: rect(0 0 0 0)
+	width: 1px
+	height: 1px
+	margin: -1px
+

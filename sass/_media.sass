@@ -1,0 +1,182 @@
+@media screen and ( max-width: 991px )
+	.container
+		padding: 50px
+	.title_section
+		height: $secHedHeight_M
+		line-height: $secHedHeight_M
+	.section-footer
+		min-height: 50px
+	.nav__link
+		font-size: $f_sS
+	.promo__container
+		padding-top: 200px
+	.booking
+		.img-group
+			display: none
+		.content
+			flex-basis: 100%
+			padding-right: 0
+	.img-group__border
+		border-width: 15px
+
+@media screen and ( max-width: 767px )
+	.nav
+		position: fixed
+		min-height: 50px
+		z-index: 50
+		justify-content: flex-end
+		padding: 5px
+		&__list
+			position: fixed
+			z-index: 2
+			flex-direction: column
+			justify-content: space-around
+			top: 0
+			left: -100%
+			width: 50%
+			height: 100vh
+			padding: 20px 15px
+			margin: 0
+			background-color: rgba(0, 0, 0, .8)
+			transition: 0.5s all
+			&_active
+				left: 0
+		&__item:nth-child(4)
+			margin-right: 0px
+		&__item:nth-child(5)
+			margin-left: 0px
+		&__item
+			width: 100%
+		&__link
+			display: block
+			text-align: center
+			font-size: $f_sS
+			padding: 10px 0
+	.hamburger
+		display: block
+		width: 46px
+		height: 38px
+		padding: 10px
+		&__item
+			display: block
+			height: 3px
+			width: 100%
+			background-color: $c_hover
+			margin-bottom: 3px
+			transition: 0.5s all
+		&_active
+			.hamburger__item
+				margin-bottom: -3px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.section-footer
+		font-size: $f_sS
+	.promo
+		&__container
+            padding-top: 50px
+		&__center
+			flex-basis: 100%
+			justify-content: space-evenly
+		&__left,
+		&__social,
+		&__logo
+			display: none
+	.title-banny_large
+		font-size: 70px
+		line-height: 70px
+	.content
+		&_left
+			padding-right: 30px
+		&_right
+			padding-left: 30px
+	.img-group
+		max-width: 80%
+		&__border
+			display: none
+		&_left,
+		&_right
+			justify-content: center
+	.menu
+		&-switch__item
+			padding: 10px 0
+		&__list
+			font-size: 16px
+			line-height: 16px
+		&__item
+			height: 40px
+	.events
+		.img-group__image
+			min-width: 280px
+
+	.gallery
+		&__container
+			flex-wrap: wrap
+		&__image
+			flex-basis: 50%
+			min-width: 200px
+
+	.contact
+		&__list
+			order: 2
+		.text-input_submit
+			order: 1
+
+@media screen and ( max-width: 576px )
+	.nav
+		padding: 10px
+	.title
+		font-size: 12px
+		&-banny
+			font-size: 30px
+			&_large
+				font-size: 60px
+				line-height: 65px
+	.img-group
+		max-width: 100%
+		&:not(:first-of-type)
+			margin-top: 20px
+
+	.content
+		flex-basis: 100%
+		&_left
+			padding-right: 0
+		&_right
+			padding-left: 0
+	.menu
+		&-switch
+			justify-content: center
+			max-width: 350px
+		&__list
+			font-size: $f_sS
+			grid-template-columns: 280px
+		&__row:nth-child(even)
+			font-size: 10px
+	.txt_bold
+		font-size: 16px
+		margin-bottom: 10px
+
+@media screen and ( max-width: 450px )
+	.title-banny
+		font-size: 26px
+		&_large
+			font-size: 50px
+	.txt_bold
+		font-size: $f_sS
+	.container
+		padding: 20px
+	.text-input
+		height: 40px
+	.menu__item
+			min-width: 0px
+			height: auto
+
+
+
+
+
+
+
