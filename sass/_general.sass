@@ -132,15 +132,19 @@ a
 		margin-right: 110px
 	&__item:nth-child(5)
 		margin-left: 110px
-	&__link
-		font-weight: bold
-		line-height: 18px
 	&__list
 		@include flexCntr
 		justify-content: space-around
 		width: 100%
 		min-height: 100px
 		border-bottom: 1px solid $c_border
+	&__link
+		font-weight: bold
+		line-height: 18px
+		&:hover
+			color: $c_hover
+		&:active
+			color: $c_hover
 .hamburger
 	display: none
 
